@@ -19,5 +19,7 @@ schtasks /create /tn "downloads-cleaner" /sc daily /st 12:00 /tr "python C:\cami
 ## Teste
 
 ```
-python -m pytest test_cleaner.py
+pip install pytest && python -m pytest test_cleaner.py
 ```
+
+(No Windows, se `python` abrir a Microsoft Store, use `py` no lugar.)
